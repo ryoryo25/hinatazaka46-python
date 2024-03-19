@@ -1,0 +1,17 @@
+[project]
+name = "hinatazaka46-python"
+version = "1.0.0"
+description = "Utilities for developing tools of hinatazaka46"
+authors = [
+    { name = "ry_Tom" }
+]
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Homepage = "https://github.com/ryoryo25/hinatazaka46-python"
+Issues = "https://github.com/ryoryo25/hinatazaka46-python/issues"
