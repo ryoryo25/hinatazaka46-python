@@ -20,7 +20,7 @@ ALL_MEMBERS = [
     Member(15, Name("富田 鈴花", "Suzuka Tomita"), Tags("#suzukablog", "#suzukatalk", "#suzygram")),
     Member(16, Name("丹生 明里", "Akari Nibu"), Tags("#nibublog", "#nibutalk", "#nibugram")),
     Member(17, Name("濱岸 ひより", "Hiyori Hamagishi"), Tags("#hiyoriblog", "#hiyoritalk", "#hamahiyogram")),
-    Member(18, Name("松田 好花", "Konoka Matsuda"), Tags("#konokablog", "#konokatalk", "#yahostagram")),
+    Member(18, Name("松田 好花", "Konoka Matsuda"), Tags("#konokablog", "#konokatalk", "#konokagram")),
     Member(19, Name("宮田 愛萌", "Manamo Miyata"), Tags("#manamoblog", "#manamotalk", "#manamogram")),
     Member(20, Name("渡邉 美穂", "Miho Watanabe"), Tags("#mihoblog", "#mihotalk", "#mihogram")),
     Member(21, Name("上村 ひなの", "Hinano Kamimura"), Tags("#hinanoblog", "#hinanotalk #ひなのなのとーく")),
