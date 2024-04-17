@@ -17,11 +17,16 @@ class Tags:
         self.talk = talk
         self.instagram = instagram
 
+class Accounts:
+    def __init__(self, instagram: str) -> None:
+        self.instagram = instagram
+
 class Member:
-    def __init__(self, id: int, name: Name, tags: Tags) -> None:
+    def __init__(self, id: int, name: Name, tags: Tags, accounts: Accounts = None) -> None:
         self.id = id
         self.name = name
         self.tags = tags
+        self.accounts = accounts
 
     def get_name(self, sep = '', en = False) -> str:
         pass
