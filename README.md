@@ -10,7 +10,7 @@ The following features are included:
 
 Run the following command to install this package.
 ```bash
-pip install git+https://github.com/ryoryo25/hinatazaka46-python.git@v0.0.2
+pip install git+https://github.com/ryoryo25/hinatazaka46-python.git@v0.0.3
 ```
 
 ## How to use
