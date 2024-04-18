@@ -10,7 +10,7 @@ The following features are included:
 
 Run the following command to install this package.
 ```bash
-pip install git+https://github.com/ryoryo25/hinatazaka46-python.git@v0.0.3
+pip install "git+https://github.com/ryoryo25/hinatazaka46-python.git@$(curl -s https://api.github.com/repos/USER/REPO/releases/latest | jq -r ".tag_name")"
 ```
 
 ## How to use
@@ -38,7 +38,7 @@ Enum class of case of string. This enum has the following items.
 
 The following functions are supported.
 
-### `id_to_name`
+### `id_to_name(id: int, en: bool = False, case: StringCase = StringCase.Plain) -> str`
 
 Converts member's ID to her name.
 
@@ -51,7 +51,7 @@ Converts member's ID to her name.
 
 **Return value:** member's name
 
-### `name_to_id`
+### `name_to_id(name: str, en: bool = False) -> int`
 
 Converts member's name to her ID.
 
@@ -63,9 +63,9 @@ Converts member's name to her ID.
 
 **Return value:** member's ID
 
-### `id_to_blog_tag`
+### `id_to_blog_tag(id: int) -> str`
 
-Gets member's ID to her blog hash tag.
+Gets member's blog hash tag from her ID.
 
 **Arguments:**
 | VAR: TYPE | default value | description|
@@ -74,9 +74,9 @@ Gets member's ID to her blog hash tag.
 
 **Return value:** member's blog hash tag starts with '#'
 
-### `id_to_talk_tag`
+### `id_to_talk_tag(id: int) -> str`
 
-Gets member's ID to her official message app hash tag.
+Gets member's her official message app hash tag from her ID.
 
 **Arguments:**
 | VAR: TYPE | default value | description|
@@ -85,9 +85,9 @@ Gets member's ID to her official message app hash tag.
 
 **Return value:** member's official message app hash tag starts with '#'
 
-### `id_to_instagram_tag(id: int)`
+### `id_to_instagram_tag(id: int) -> str`
 
-Gets member's ID to her instagram hash tag.
+Gets member's instagram hash tag from her ID.
 
 **Arguments:**
 | VAR: TYPE | default value | description|
@@ -97,3 +97,16 @@ Gets member's ID to her instagram hash tag.
 **Return value:** member's instagram hash tag starts with '#'
 
 **NOTE:** *returns empty string if the member doesn't have a official instagram account.*
+
+### `id_to_instagram_account(id: int) -> str`
+
+Gets member's instagram username from her ID.
+
+**Arguments:**
+| VAR: TYPE | default value | description|
+| ---------- | :-----------: | ---------- |
+| `id: int` | - | Member's ID |
+
+**Return value:** member's instagram username
+
+**NOTE:** *returns `None` if the member doesn't have a official instagram account.*
