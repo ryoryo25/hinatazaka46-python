@@ -10,7 +10,7 @@ The following features are included:
 
 Run the following command to install this package.
 ```bash
-pip install "git+https://github.com/ryoryo25/hinatazaka46-python.git@$(curl -s https://api.github.com/repos/USER/REPO/releases/latest | jq -r ".tag_name")"
+pip install "git+https://github.com/ryoryo25/hinatazaka46-python.git@$(curl -s https://api.github.com/repos/ryoryo25/hinatazaka46-python/releases/latest | jq -r '.tag_name')"
 ```
 
 ## How to use
