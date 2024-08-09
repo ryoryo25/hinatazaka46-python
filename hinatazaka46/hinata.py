@@ -41,8 +41,8 @@ ALL_MEMBERS = [
     Member(36, Name("渡辺 莉奈", "Rina Watanabe"), Tags("#rinashiblog", "#rinashitalk")),
 ]
 
-ALL_MEMBER_NAMES_JA = [t.name.ja for t in ALL_MEMBERS]
-ALL_MEMBER_NAMES_EN = [t.name.en for t in ALL_MEMBERS]
+ALL_MEMBER_NAMES_JA = [t.name.get_full_name() for t in ALL_MEMBERS]
+ALL_MEMBER_NAMES_EN = [t.name.get_full_name(en=True) for t in ALL_MEMBERS]
 
 def id_to_name(id: int, en: bool = False, case: StringCase = StringCase.Plain) -> str:
     """Converts member's ID to her name.
