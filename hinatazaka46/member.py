@@ -7,9 +7,37 @@ class StringCase(Enum):
     KebabCase = auto()
 
 class Name:
-    def __init__(self, ja: str, en: str) -> None:
-        self.ja = ja
-        self.en = en
+    def __init__(self, ja_full: str, en_full: str) -> None:
+        ja_split = ja_full.split()
+        en_split = en_full.split()
+        self._family = (ja_split[0], en_split[1])
+        self._given = (ja_split[1], en_split[0])
+
+    def get_full_name(self, en: bool = False, case: StringCase = StringCase.Plain) -> str:
+        name_list = self.get_full_name_as_list(en)
+
+        if case == StringCase.CamelCase:
+            return self._concat_name_list(name_list, "")
+        elif case == StringCase.SnakeCase:
+            return self._concat_name_list(name_list, sep="_", lower=True)
+        elif case == StringCase.KebabCase:
+            return self._concat_name_list(name_list, sep="-", lower=True)
+        return self._concat_name_list(name_list)
+
+    def _concat_name_list(self, name_list: list[str], sep: str = " ", lower: bool = False) -> str:
+        if lower:
+            name_list = [n.lower() for n in name_list]
+        return sep.join(name_list)
+
+    def get_full_name_as_list(self, en: bool = False) -> list[str]:
+        result = [self.get_family_name(en), self.get_given_name(en)]
+        return reversed(result) if en else result
+
+    def get_family_name(self, en: bool = False) -> str:
+        return self._family[int(en)]
+
+    def get_given_name(self, en: bool = False) -> str:
+        return self._given[int(en)]
 
 class Tags:
     def __init__(self, blog: str, talk: str = None, instagram: str = None) -> None:
@@ -27,6 +55,3 @@ class Member:
         self.name = name
         self.tags = tags
         self.accounts = accounts
-
-    def get_name(self, sep = '', en = False) -> str:
-        pass
