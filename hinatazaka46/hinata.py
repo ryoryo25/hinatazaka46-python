@@ -45,43 +45,56 @@ ALL_MEMBER_NAMES_JA = [t.name.ja for t in ALL_MEMBERS]
 ALL_MEMBER_NAMES_EN = [t.name.en for t in ALL_MEMBERS]
 
 def id_to_name(id: int, en: bool = False, case: StringCase = StringCase.Plain) -> str:
-    name = ALL_MEMBERS[id].name
-    name_loc = name.en if en else name.ja
-
-    if case == StringCase.CamelCase:
-        return name_loc.replace(" ", "")
-    elif case == StringCase.SnakeCase:
-        return name_loc.lower().replace(" ", "_")
-    elif case == StringCase.KebabCase:
-        return name_loc.lower().replace(" ", "-")
-    return name_loc
+    """Converts member's ID to her name.
+    """
+    return ALL_MEMBERS[id].name.get_full_name(en, case)
 
 def name_to_id(name: str, en: bool = False) -> int:
+    """Converts member's name to her ID.
+    """
     if en:
         return ALL_MEMBER_NAMES_EN.index(name)
     return ALL_MEMBER_NAMES_JA.index(name)
 
 def id_to_blog_tag(id: int) -> str:
+    """Gets member's blog hash tag from her ID.
+    """
     return ALL_MEMBERS[id].tags.blog
 
 def id_to_talk_tag(id: int) -> str:
+    """Gets member's her official message app hash tag from her ID.
+    """
     tag = ALL_MEMBERS[id].tags.talk
     return "" if tag is None else tag
 
 def id_to_instagram_tag(id: int) -> str:
+    """Gets member's instagram hash tag from her ID.
+    """
     tag = ALL_MEMBERS[id].tags.instagram
     return "" if tag is None else tag
 
-def id_to_instagram_account(id: int) -> str:
+def id_to_instagram_account(id: int) -> str | None:
+    """Gets member's instagram username from her ID.
+    """
     accounts = ALL_MEMBERS[id].accounts
     return None if accounts is None else accounts.instagram
 
+def instagram_accounts():
+    """Generates all existing instagram accounts.
+    """
+    for member in ALL_MEMBERS:
+        a = member.accounts
+        if a is None:
+            continue
+        yield a.instagram
+
 GRADUATED_IDS = [
-    1, # "井口 眞緒"
-    2, # "潮 紗理菜"
-    3, # "柿崎 芽実"
-    4, # "影山 優佳"
-    6, # "齊藤 京子"
+    1,  # "井口 眞緒"
+    2,  # "潮 紗理菜"
+    3,  # "柿崎 芽実"
+    4,  # "影山 優佳"
+    6,  # "齊藤 京子"
+    10, # "高本 彩花"
     19, # "宮田 愛萌"
     20, # "渡邉 美穂"
     26, # "岸 帆夏"

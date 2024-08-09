@@ -110,3 +110,12 @@ Gets member's instagram username from her ID.
 **Return value:** member's instagram username
 
 **NOTE:** *returns `None` if the member doesn't have a official instagram account.*
+
+### `instagram_accounts()`
+
+Generates all existing instagram accounts.
+
+**Arguments:**
+None
+
+**Return value:** generator for instagram accounts
