@@ -28,7 +28,7 @@ ALL_MEMBERS = [
     Member(23, 3, Name("森本 茉莉", "Marie Morimoto"), Tags("#marieblog", "#marietalk", "#mariegram"), Accounts("mariemorimoto_official")),
     Member(24, 3, Name("山口 陽世", "Haruyo Yamaguchi"), Tags("#haruyoblog", "#haruyotalk", "#haruyogram"), Accounts("haruyoyamaguchi.official")),
     Member(25, 4, Name("石塚 瑶季", "Tamaki Ishizuka"), Tags("#tamakiblog", "#tamakitalk")),
-    Member(26, 4, Name("岸 帆夏", "Honoka Kishi"), Tags("#kishihoblog", "#kishihotalk", "#kishihogram"), Accounts("honoka_kishi")),
+    Member(26, 4, Name("岸 帆夏", "Honoka Kishi"), Tags("#kishihoblog", "#kishihotalk")),
     Member(27, 4, Name("小西 夏菜実", "Nanami Konishi"), Tags("#nanamiblog", "#nanamitalk")),
     Member(28, 4, Name("清水 理央", "Rio Shimizu"), Tags("#rioblog", "#riotalk")),
     Member(29, 4, Name("正源司 陽子", "Yoko Shogenji"), Tags("#yokoblog", "#よーこからの連絡")),
