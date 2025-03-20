@@ -1,6 +1,6 @@
 [project]
 name = "hinatazaka46-python"
-version = "0.6.0"
+version = "0.7.0"
 description = "Utilities for developing tools of hinatazaka46"
 authors = [
     { name = "ry_Tom" }
