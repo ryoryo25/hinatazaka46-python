@@ -46,9 +46,9 @@ ALL_MEMBERS = [
     Member(41, 5, Name("坂井 新奈", "Nina Sakai"), Tags("#ninablog")),
     Member(42, 5, Name("佐藤 優羽", "Yu Sato"), Tags("#yublog")),
     Member(43, 5, Name("下田 衣珠季", "Izuki Shimoda"), Tags("#izukiblog")),
-    Member(45, 5, Name("高井 俐香", "Rika Takai"), Tags("#rikablog")),
-    Member(46, 5, Name("鶴崎 仁香", "Niko Tsurusaki"), Tags("#nikoblog")),
-    Member(47, 5, Name("松尾 桜", "Sakura Matsuo"), Tags("#sakurablog")),
+    Member(44, 5, Name("高井 俐香", "Rika Takai"), Tags("#rikablog")),
+    Member(45, 5, Name("鶴崎 仁香", "Niko Tsurusaki"), Tags("#nikoblog")),
+    Member(46, 5, Name("松尾 桜", "Sakura Matsuo"), Tags("#sakurablog")),
 ]
 
 ALL_MEMBER_NAMES_JA = [t.name.get_full_name() for t in ALL_MEMBERS]
