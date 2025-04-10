@@ -23,7 +23,7 @@ ALL_MEMBERS = [
     Member(18, 2, Name("松田 好花", "Konoka Matsuda"), Tags("#konokablog", "#konokatalk", "#konokagram"), Accounts("matsudakonoka.yahos")),
     Member(19, 2, Name("宮田 愛萌", "Manamo Miyata"), Tags("#manamoblog", "#manamotalk", "#manamogram"), Accounts("manamomiyata_official")),
     Member(20, 2, Name("渡邉 美穂", "Miho Watanabe"), Tags("#mihoblog", "#mihotalk", "#mihogram"), Accounts("mihowatanabe_")),
-    Member(21, 3, Name("上村 ひなの", "Hinano Kamimura"), Tags("#hinanoblog", "#hinanotalk #ひなのなのとーく", "#hinanogram"), Accounts("hinanokamimura.official")),
+    Member(21, 3, Name("上村 ひなの", "Hinano Kamimura"), Tags("#ひなのなのぶろぐ", "#ひなのなのとーく", "#ひなのなのぐらむ"), Accounts("hinanokamimura.official")),
     Member(22, 3, Name("髙橋 未来虹", "Mikuni Takahashi"), Tags("#mikuniblog", "#mikunitalk", "#mikunigram"), Accounts("mikuni.takahashi__")),
     Member(23, 3, Name("森本 茉莉", "Marie Morimoto"), Tags("#marieblog", "#marietalk", "#mariegram"), Accounts("mariemorimoto_official")),
     Member(24, 3, Name("山口 陽世", "Haruyo Yamaguchi"), Tags("#haruyoblog", "#haruyotalk", "#haruyogram"), Accounts("haruyoyamaguchi.official")),
