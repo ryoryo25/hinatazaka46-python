@@ -42,7 +42,7 @@ ALL_MEMBERS = [
     Member(37, 5, Name("大田 美月", "Mizuki Ota"), Tags("#mizukiblog")),
     Member(38, 5, Name("大野 愛実", "Manami Ono"), Tags("#manamiblog")),
     Member(39, 5, Name("片山 紗希", "Saki Katayama"), Tags("#sakiblog")),
-    Member(40, 5, Name("蔵盛 妃那乃", "Hinano Kuramori"), Tags("#hinanoblog5")),
+    Member(40, 5, Name("蔵盛 妃那乃", "Hinano Kuramori"), Tags("#hinanoblog")),
     Member(41, 5, Name("坂井 新奈", "Nina Sakai"), Tags("#ninablog")),
     Member(42, 5, Name("佐藤 優羽", "Yu Sato"), Tags("#yublog")),
     Member(43, 5, Name("下田 衣珠季", "Izuki Shimoda"), Tags("#izukiblog")),
