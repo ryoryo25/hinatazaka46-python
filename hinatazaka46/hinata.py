@@ -98,6 +98,17 @@ def instagram_accounts():
             continue
         yield a.instagram
 
+def get_nth_phase_list(n: int, en: bool = False) -> list[str]:
+    """Generates a list of member's names within the n-th phase.
+    """
+    return [m.name.get_full_name(en) for m in ALL_MEMBERS if m.phase == n]
+
+NAMES_JA_1ST = get_nth_phase_list(1)
+NAMES_JA_2ND = get_nth_phase_list(2)
+NAMES_JA_3RD = get_nth_phase_list(3)
+NAMES_JA_4TH = get_nth_phase_list(4)
+NAMES_JA_5TH = get_nth_phase_list(5)
+
 GRADUATED_IDS = [
     1,  # "井口 眞緒"
     2,  # "潮 紗理菜"

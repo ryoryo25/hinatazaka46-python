@@ -119,3 +119,15 @@ Generates all existing instagram accounts.
 None
 
 **Return value:** generator for instagram accounts
+
+### `get_nth_phase_list(n: int, en: bool = False) -> list[str]`
+
+Generates a list of member's names within the `n`-th phase.
+
+**Arguments:**
+| VAR: TYPE | default value | description|
+| ---------- | :-----------: | ---------- |
+| `n: int` | - | Phase |
+| `en: bool` | `False` | Name in Romaji or not |
+
+**Return value:** a list of member's names with in the `n`-th phase

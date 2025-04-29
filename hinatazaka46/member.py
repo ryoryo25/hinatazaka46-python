@@ -59,9 +59,9 @@ class Accounts:
         self.instagram = instagram
 
 class Member:
-    def __init__(self, id: int, gen: int, name: Name, tags: Tags, accounts: Accounts = None) -> None:
+    def __init__(self, id: int, phase: int, name: Name, tags: Tags, accounts: Accounts = None) -> None:
         self.id = id
-        self.gen = gen
+        self.phase = phase
         self.name = name
         self.tags = tags
         self.accounts = accounts
