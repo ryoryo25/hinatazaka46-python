@@ -46,7 +46,7 @@ ALL_MEMBERS = [
     Member(41, 5, Name("坂井 新奈", "Nina Sakai"), Tags("#ninablog")),
     Member(42, 5, Name("佐藤 優羽", "Yu Sato"), Tags("#satoyublog")),
     Member(43, 5, Name("下田 衣珠季", "Izuki Shimoda"), Tags("#izukiblog")),
-    Member(44, 5, Name("高井 俐香", "Rika Takai"), Tags("#rikablog")),
+    Member(44, 5, Name("高井 俐香", "Rika Takai"), Tags("#りかの綴りごと")),
     Member(45, 5, Name("鶴崎 仁香", "Niko Tsurusaki"), Tags("#にこにこぶろぐ")),
     Member(46, 5, Name("松尾 桜", "Sakura Matsuo"), Tags("#sakulovelog")),
 ]
